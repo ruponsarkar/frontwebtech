@@ -1,16 +1,16 @@
 {
   "name": "frontwebtech-root",
   "private": true,
-  "workspaces": [
-    "frontend"
-  ],
+  "workspaces": ["frontend"],
   "scripts": {
     "dev": "npm --prefix frontend run dev",
     "build": "npm --prefix frontend run build && node scripts/sync-build-output.mjs",
     "start": "npm --prefix frontend run start",
     "lint": "npm --prefix frontend run lint"
   },
-  "devDependencies": {
-    "@types/nodemailer": "^8.0.0"
+  "dependencies": {
+    "next": "^15.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
